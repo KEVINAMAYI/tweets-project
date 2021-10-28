@@ -52,7 +52,8 @@ def test_wrong_length():
     testargs = ["main.py", "apple" ,"apple.json", "100", "hashtag","hastag"]
 
     with patch.object(sys, 'argv',testargs):
-         print(sys.argv)
+
+         assert len(sys.argv) != 5
 
 
 # expects true and program should continue => hastag & user testing
