@@ -1,2 +1,4 @@
 unittest
 pytest
+google-cloud
+requests-oauthlib
